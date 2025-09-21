@@ -1,64 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROJETO SENAI</title>    
-    <link rel="stylesheet" href="style.css">
+  <!-- Define a codificação de caracteres -->
+  <meta charset="UTF-8">
+
+  <!-- Garante que o site será responsivo em dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Título exibido na aba do navegador -->
+  <title>Portfólio - André Luiz Coutinho</title>
+
+  <!-- Importa o arquivo CSS principal -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Pré-carrega a conexão com o Google Fonts para melhor desempenho -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <!-- Importa a fonte Poppins do Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
 </head>
-<body> 
-    <h1> ANDRÉ LUIZ COUTINHO </h1>
+<body>
+  <!-- Cabeçalho do site -->
+  <header>
+    <!-- Barra de navegação com links para seções internas -->
+    <nav class="navbar">
 
-    <h2> Profissional da Área de Tecnologia </h2>
+      <!-- Logo ou nome principal -->
+      <h1 class="logo">André Luiz Coutinho</h1>
 
-    <div class="container-principal">
+      <!-- Links do menu de navegação -->
+      <ul class="nav-links">
+        <li><a href="#Sobre">Sobre</a></li>
+        <li><a href="#Projetos">Projetos</a></li>
+        <li><a href="#Contato">Contato</a></li>
+      </ul>
+    </nav>
 
-        <div class="secao-sobre">
-            <h3> SOBRE </h3>
-            <img src="Foto_01.jpeg" alt="Foto de perfil de André Luiz Coutinho" class="foto-perfil">
-            <p> Profissional da àrea de tecnologia ...............................................................
-                ..................................................................................................
-                ..................................................................................................
-                ..................................................................................................
-                ..................................................................................................
-            </p>
-        </div>
+    <!-- Seção hero com destaque inicial -->
+    <div class="hero">
+      <h2>Profissional da Área de Tecnologia</h2>
+      <p>Transformando ideias em soluções digitais criativas e eficientes.</p>
 
-        <div class="secao-projetos">
-    <h4> Meus Projetos </h4>
-    <div class="projetos-container">
-        <div class="projeto-item">
-            <h4>Projeto 1: Site de Receitas</h4>
-            <a href="#"><img src="Icone_01.png" alt="Miniatura do Projeto 1"></a>
-        </div>
-        <div class="projeto-item">
-            <h4>Projeto 2: Calculadora</h4>
-            <a href="#"><img src="Icone_02.png" alt="Miniatura do Projeto 2"></a>
-        </div>
-        <div class="projeto-item">
-            <h4>Projeto 3: Jogo da Forca</h4>
-            <a href="#"><img src="Icone_03.png" alt="Miniatura do Projeto 3"></a>
-        </div>
+      <!-- Botão para ação, como baixar o CV -->
+       <!-- Criei meu curriculo em pdf e inserir no arquivo-->
+      <a href="Andre_Luiz_Coutinho_CV.pdf" class="btn" download>Baixar CV</a>
+
     </div>
-</div>
+  </header>
 
-        
-    </div> <div class="secao-responsabilidades">
-        <h5> Descrição </h5>
-        <div class="lista-atributos">
-           <ol> 
-            <li> COMPROMETIMENTO </li>
-            <li> RESPONSABILIDADE </li>
-            <li> INTEGRIDADE </li>
-           </ol>
+  <!-- Conteúdo principal do site -->
+  <main>
+    <!-- Seção "Sobre Mim" -->
+    <section id="sobre" class="secao-sobre">
 
+      <!-- Foto de perfil com texto alternativo para acessibilidade -->
+      <img src="Foto_01.jpeg" alt="Foto de perfil de André Luiz Coutinho" class="foto-perfil">
+      <h3>Sobre Mim</h3>
+      <p>Sou um desenvolvedor apaixonado por tecnologia, com experiência em criação de sites, e jogos desenvolvidos em java, aplicativos e soluções inovadoras. Busco sempre unir estética e funcionalidade para entregar resultados de alto impacto.</p>
+    </section>
 
-        </div>
-    </div>  
+    <!-- Seção de projetos -->
+    <section id="projetos" class="secao-projetos">
+      <h3>Projetos em Destaque</h3>
 
-    <footer>
-        <p>Entre em contato: seu.email@exemplo.com</p>
-    </footer>
+      <!-- Container que agrupa os projetos -->
+      <div class="projetos-container">
 
+        <!-- Projeto 1 -->
+        <figure class="projeto-item">
+          <img src="Icone_01.png" alt="Flappy_Bird_Couti">
+          <figcaption>Flappy_Bird_Couti</figcaption>
+        </figure>
+
+        <!-- Projeto 2 -->
+        <figure class="projeto-item">
+          <img src="Icone_02.png" alt="PacMan_Couti">
+          <figcaption>PacMan_Couti</figcaption>
+        </figure>
+
+        <!-- Projeto 3 -->
+        <figure class="projeto-item">
+          <img src="Icone_03.png" alt="Couti_Space">
+          <figcaption>Couti_Space</figcaption>
+        </figure>    
+
+        <!-- Projeto 4 -->
+        <figure class="projeto-item">
+          <img src="Icone_04.png" alt="Ache as Maçãs">
+          <figcaption>Ache as Maçãs</figcaption>
+        </figure>
+      
+      <!-- Projeto 5 -->
+        <figure class="projeto-item">
+          <img src="Icone_05.png" alt="Save the World">
+          <figcaption>Save the World</figcaption>
+        </figure>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Rodapé com informações de contato -->
+  <footer id="contato">
+    <h3>Entre em Contato</h3>
+    <p>Email: seu.email@exemplo.com</p>
+
+    <!-- Links para redes sociais -->
+    <div class="social">
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+    </div>
+  </footer>
 </body>
 </html>
