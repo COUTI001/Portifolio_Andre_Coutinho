@@ -13,12 +13,20 @@
   <!-- Importa o arquivo CSS principal -->
   <link rel="stylesheet" href="style.css">
 
+  <!-- CSS do Lightbox -->
+<link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css" rel="stylesheet">
+
+
   <!-- Pré-carrega a conexão com o Google Fonts para melhor desempenho -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
   <!-- Importa a fonte Poppins do Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
 </head>
+
+<!-- JS do Lightbox -->
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js"></script>
+
 <body>
   <!-- Cabeçalho do site -->
   <header>
@@ -60,56 +68,72 @@
     </section>
 
     <!-- Seção de projetos -->
-    <section id="projetos" class="secao-projetos">
-      <h3>Projetos em Destaque</h3>
+<section id="projetos" class="secao-projetos">
+  <h3>Projetos em Destaque</h3>
 
-      <!-- Container que agrupa os projetos -->
-      <div class="projetos-container">
+  <!-- Container que agrupa os projetos -->
+  <div class="projetos-container">
 
-        <!-- Projeto 1 -->
-        <figure class="projeto-item">
-          <img src="Icone_01.png" alt="Flappy_Bird_Couti">
-          <figcaption>Flappy_Bird_Couti</figcaption>
-        </figure>
+    <!-- Projeto 1 -->
+    <figure class="projeto-item">
+      <!-- Link da imagem maior com Lightbox -->
+      <a href="Flappy_Bird_Grande.png" data-lightbox="projetos" data-title="Flappy Bird Couti">
+        <img src="Icone_01.png" alt="Flappy_Bird_Couti">
+      </a>
+      <figcaption>Flappy_Bird_Couti</figcaption>
+    </figure>
 
-        <!-- Projeto 2 -->
-        <figure class="projeto-item">
-          <img src="Icone_02.png" alt="PacMan_Couti">
-          <figcaption>PacMan_Couti</figcaption>
-        </figure>
+    <!-- Projeto 2 -->
+    <figure class="projeto-item">
+      <a href="PacMan_Couti_Grande.png" data-lightbox="projetos" data-title="PacMan Couti">
+        <img src="Icone_02.png" alt="PacMan_Couti">
+      </a>
+      <figcaption>PacMan_Couti</figcaption>
+    </figure>
 
-        <!-- Projeto 3 -->
-        <figure class="projeto-item">
-          <img src="Icone_03.png" alt="Couti_Space">
-          <figcaption>Couti_Space</figcaption>
-        </figure>    
+    <!-- Projeto 3 -->
+    <figure class="projeto-item">
+      <a href="Space_Couti_Grande.png" data-lightbox="projetos" data-title="Couti Space">
+        <img src="Icone_03.png" alt="Couti_Space">
+      </a>
+      <figcaption>Couti_Space</figcaption>
+    </figure>
 
-        <!-- Projeto 4 -->
-        <figure class="projeto-item">
-          <img src="Icone_04.png" alt="Ache as Maçãs">
-          <figcaption>Ache as Maçãs</figcaption>
-        </figure>
-      
-      <!-- Projeto 5 -->
-        <figure class="projeto-item">
-          <img src="Icone_05.png" alt="Save the World">
-          <figcaption>Save the World</figcaption>
-        </figure>
+    <!-- Projeto 4 -->
+    <figure class="projeto-item">
+      <a href="Ache_a_Maca_Grande.png" data-lightbox="projetos" data-title="Ache as Maçãs">
+        <img src="Icone_04.png" alt="Ache as Maçãs">
+      </a>
+      <figcaption>Ache as Maçãs</figcaption>
+    </figure>
 
-       <!-- Projeto 6 -->
-        <figure class="projeto-item">
-          <img src="Icone_06.png" alt="Candy_Crush_Couti">
-          <figcaption>Candy_Crush_Couti</figcaption>
-        </figure>
+    <!-- Projeto 5 -->
+    <figure class="projeto-item">
+      <a href="Save_the_World_Grande.png" data-lightbox="projetos" data-title="Save the World">
+        <img src="Icone_05.png" alt="Save the World">
+      </a>
+      <figcaption>Save the World</figcaption>
+    </figure>
 
-       <!-- Projeto 7 -->
-        <figure class="projeto-item">
-          <img src="Icone_07.png" alt="Snake_Couti">
-          <figcaption>Snake_Couti</figcaption>
-        </figure>
+    <!-- Projeto 6 -->
+    <figure class="projeto-item">
+      <a href="Candy_Crush_Couti_Grande.png" data-lightbox="projetos" data-title="Candy Crush Couti">
+        <img src="Icone_06.png" alt="Candy_Crush_Couti">
+      </a>
+      <figcaption>Candy_Crush_Couti</figcaption>
+    </figure>
 
-      </div>
-    </section>
+    <!-- Projeto 7 -->
+    <figure class="projeto-item">
+      <a href="Snake_Couti_Grande.png" data-lightbox="projetos" data-title="Snake Couti">
+        <img src="Icone_07.png" alt="Snake_Couti">
+      </a>
+      <figcaption>Snake_Couti</figcaption>
+    </figure>
+
+  </div>
+</section>
+
   </main>
 
   <!-- Rodapé com informações de contato -->
