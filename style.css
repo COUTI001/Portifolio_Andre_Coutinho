@@ -101,6 +101,12 @@ footer {
   background: #0056b3; /* Fundo azul */
   color: #fff; /* Texto branco */
 }
+footer .contatos-email a {
+  margin: 0 10px; /* Espaço entre os links */
+  color:#fff; /* Cor dos links */
+  text-decoration: none; /* Remove o sublinhado */
+}
+
 footer .social a {
   margin: 0 10px; /* Espaço entre os links */
   color: #fff; /* Cor dos links */
